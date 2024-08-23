@@ -27,7 +27,7 @@ export class TasksComponent {
   }
 
   onCompleteTask(id: string) {
-    this.tasksService.removeTask(id);
+    // this.tasksService.removeTask()
   }
 
   onStartAddNewTask() {
@@ -35,9 +35,6 @@ export class TasksComponent {
   }
 
   onCancelAddTask() {
-    this.isAddingTask = false;
-  }
-  onAddTask(taskData: NewTaskData) {
     this.isAddingTask = false;
   }
 }
